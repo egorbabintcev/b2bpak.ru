@@ -1,0 +1,81 @@
+.nav
+
+	.container		
+
+	&-toggler		
+		padding: 10px 0
+		text-align: center
+		cursor: pointer
+
+		@include media-breakpoint-up(md)
+			display: none
+
+		&__icon
+			font-size: 3rem
+
+	&-menu
+		@extend %flex
+		justify-content: center
+		align-items: stretch
+		padding: 20px 0			
+
+		@include media-breakpoint-up(md)
+		 opacity: 1
+		 display: flex
+
+		@include media-breakpoint-down(sm)
+			flex-direction: column
+			align-items: center				
+
+		&__item
+			@extend %flex
+			align-items: center
+			padding: 0 30px
+
+			&:hover &-text
+				color: $dark			
+
+			@include media-breakpoint-down(md)
+				padding: 0 15px
+			@include media-breakpoint-down(sm)
+				padding: 10px 0
+
+			&-text
+				color: #777777
+				text-transform: uppercase
+				font:
+					size: 1.6rem
+					weight: 700
+				transition: color .5s
+
+	&-dropdown		
+		position: relative
+		z-index: 2
+
+		@include media-breakpoint-down(sm)
+			display: flex
+			flex-direction: column
+			align-items: center
+
+		&__item			
+
+			&:hover + .nav-dropdown__list
+				@extend %nav-menu_dropdown
+
+		&__list 			
+			@include media-breakpoint-up(md)
+				display: none
+			@include media-breakpoint-down(sm)
+				display: flex
+				flex-direction: column
+				align-items: center
+
+			&:hover
+				@extend %nav-menu_dropdown			
+
+			&-item
+				padding: 10px 0
+
+			&-text
+				@include media-breakpoint-down(sm)
+					font-size: 1.4rem

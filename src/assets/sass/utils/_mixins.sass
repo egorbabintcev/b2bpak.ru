@@ -1,0 +1,21 @@
+@mixin heading($xsmargin: 60px, $mdmargin: 60px, $xlmargin: 100px) 
+	margin-bottom: $xlmargin
+	text-transform: uppercase
+	font-weight: 700
+
+	@include media-breakpoint-down(md)
+		margin-bottom: $mdmargin
+	@include media-breakpoint-down(xs)
+		margin-bottom: $xsmargin
+
+	&-title	
+		font-size: 2.6rem
+		color: $dark
+
+		&_accent
+			color: $accent
+
+	&-subtitle
+		margin-bottom: 15px
+		font-size: 1.8rem
+		color: $accent

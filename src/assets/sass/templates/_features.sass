@@ -1,0 +1,29 @@
+.features
+	padding: 0 0 75px 
+
+	.feature 
+		@extend %flex
+		flex-direction: column
+		align-items: center
+
+		@include media-breakpoint-down(lg)
+			&:nth-child(1)
+				margin-bottom: 50px
+			&:nth-child(2)
+				margin-bottom: 50px
+		@include media-breakpoint-down(sm)
+			margin-bottom: 50px
+
+		&__icon
+			margin-bottom: 10px
+
+			&-symbol
+				color: $accent
+				font-size: 6rem
+
+		&__title
+			color: $dark
+			text-align: center		
+			font:
+				size: 2.2rem
+				weight: 400

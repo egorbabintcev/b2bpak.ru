@@ -1,0 +1,53 @@
+extends ../layouts/base
+block head 
+	-
+		var title = "Примеры работ по созданию дизайна пакета с логотипом";
+		var description = "Качественно созданный макет для логотипа обеспечит хорошее качество самого пакета и улучшит восприятие логотипа клиентами.";
+
+block content
+	include ../includes/header
+
+	include ../includes/nav
+
+	main.main
+			article.article
+				.container
+					.article__heading
+						p.article__heading-subtitle потфолио
+						h1.article__heading-title примеры наших работ
+								span.article__heading-title_accent ....	
+					p.article-paragraph Здесь собраны примеры всех видов продукта, которые мы можем изготовить. Вы также можете вдохновиться нашими работами при создании дизайна своего пакета. За все эти годы мы сотрудничали со многими компаниями, и все они остались довольны. Вы можете убедиться в этом, зайдя на страницу отзывов. К нам обращались люди как из Москвы и Московской области, так и из более отдаленных регионов России.
+					p.article-paragraph Современная производственная база: высококачественные фотополимерные формы, станки для работы с сырьем и печатные флексографические машины, удобная ценовая политика: вы знаете, за что платите. Эти факторы позволяют произвести пакет с логотипом наилучшего качества дешево и быстро.
+					p.article-paragraph Один из самых дешевых и эффективных способов завоевать доверие клиента – предоставить ему надежный пакет с ярким и запоминающимся логотипом. Многочисленные исследования подтвердили, что такой продукт позволяет в короткие сроки увеличить поток клиентов и является отличным рекламным каналом. Если для вас важно формирование положительного имиджа своего бренда, то упаковка с логотипом отлично вам подойдет.
+					.article-portfolio
+						.row
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-1.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-2.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-3.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-4.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-5.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-6.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-7.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-8.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-9.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-10.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-11.png')
+							.col-6.col-md-3
+								img.article-portfolio__image(data-src='img/portfolio-image-12.png')
+			.container
+				include ../includes/features
+
+			include ../includes/call-to-action
+
+	include ../includes/footer

@@ -1,0 +1,66 @@
+@import '../libs/font-awesome/scss/all'
+@import '~bootstrap/scss/bootstrap-grid'
+@import 'utils/variables', 'utils/mixins'
+
+// Patterns
+
+%flex
+	display: flex
+
+%grid
+	display: grid
+
+%nav-menu_dropdown
+	@include media-breakpoint-up(md)
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		min-width: 300px		
+		padding: 15px 0
+		padding-left: 15px
+		position: absolute
+
+		background-color: $light
+
+	@include media-breakpoint-up(lg)
+		padding-left: 30px
+
+// Specifications
+
+*
+	box-sizing: border-box
+
+html
+	font-size: 62.5%
+
+body
+	margin: 0
+	font-family: $mainFont	
+	color: $dark
+
+h1, h2, h3, h4, h5, h6, p 
+	margin: 0
+
+a 
+	text-decoration: none
+	cursor: pointer
+
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+button, input, textarea
+	border: none
+	outline: none
+	padding: 0
+
+button:focus, input:focus, textarea:focus
+	outline: none
+
+// Main styles
+
+.hidden
+	@include media-breakpoint-down(sm)
+		opacity: 0
+		display: none

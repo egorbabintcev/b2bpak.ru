@@ -1,0 +1,126 @@
+.contacts
+	
+	.container
+		padding-top: 50px
+
+	&__heading
+		margin-bottom: 60px
+		text-transform: uppercase
+
+		&-title
+			color: $dark
+			font:
+				size: 2.6rem
+				weight: 700
+
+			&_accent
+				color: $accent
+
+		&-subtitle
+			margin-bottom: 10px
+			color: $accent
+			font:
+				size: 1.8rem
+				weight: 700
+
+	&__items
+		margin-bottom: 50px		
+
+	&__item
+		@extend %flex
+		align-items: center
+		
+		
+		@include media-breakpoint-up(lg)
+			&:nth-child(1)
+				margin-bottom: 10px
+			&:nth-child(2)
+				margin-bottom: 10px
+		@include media-breakpoint-down(lg)			
+			margin-bottom: 10px
+		@include media-breakpoint-down(xs)
+			flex-direction: column
+			margin-bottom: 20px
+
+		&-icon
+			margin-right: 5px
+			font-size: 2rem
+
+			@include media-breakpoint-down(xs)
+				margin: 0 0 10px
+
+		&-text
+			text-align: center
+			font:
+				size: 2rem
+				weight: 700
+
+	&__callout
+		position: relative
+		padding: 100px 0
+		background:			
+			size: cover
+			position: center
+		
+		&:after, &:before 
+			background-color: $light
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+			height: 15px
+			position: absolute			
+			border-radius: 0 0 10px 10px
+
+		&:after 
+			content: ''
+			width: calc(100% - 40px)			
+			bottom: -15px
+			left: 20px			
+
+		&:before 
+			content: ''					
+			width: calc(100% - 80px)
+			bottom: -	30px
+			left: 40px
+
+
+	&__form
+		@extend %flex
+		flex-direction: column
+		align-items: center
+		padding: 30px 35px 100px
+		background-color: $accent
+		border-radius: 10px
+		
+		@include media-breakpoint-down(xs)
+			padding: 20px 25px
+
+		&-title
+			margin-bottom: 50px
+			text-transform: uppercase
+			text-align: center
+			color: $light
+			font:
+				size: 1.8rem
+				weight: 900
+
+		&-input
+			width: 100%
+			margin-bottom: 30px
+			padding: 12px 15px
+			border-radius: 3px
+
+			color: $darkGray
+			font:
+				family: $mainFont
+				size: 2rem
+				weight: 400
+
+		&-button
+			padding: 8px 25px
+			border-radius: 2px
+			
+			background-color: $light
+			color: $dark
+			text-transform: uppercase
+			font:
+				size: 1.8rem
+				weight: 900

@@ -1,0 +1,113 @@
+extends ../layouts/base
+block head 
+	-
+		var title = "Пакеты с логотипом. Широкий выбор | Дешево | Качественно";
+		var description = "Необходима качественная упаковка для привлечени клиентов? Наше производство удовлетворит все ваши требования быстро, качественно и по приемлемой цене.";
+
+block content
+	include ../includes/header
+
+	include ../includes/nav
+
+	main.main
+		section.intro
+			.container
+				.intro__content
+					.intro__heading
+						h1.intro__heading-title Производство пакетов с логотипом
+						p.intro__heading-subtitle Качественно.Быстро.Дешево
+					a.button.intro__button(data-action='toggle' data-target='modal') сделать заказ
+		section.about
+			.container
+				.about__heading
+					p.about__heading-subtitle о нас
+					h2.about__heading-title мы профессионалы своего дела
+						span.about__heading-title_accent ....	
+				include ../includes/features
+
+				article.article
+					h3.article-title Приобретая у нас продукцию с логотипом на заказ, вы получаете:
+					ul.article-list
+						li.article-list__item
+							i.fas.fa-check-square.article-list__item-marker
+							span.article-list__item-text Брендированный пакет/скотч - лицо вашей фирмы
+						li.article-list__item
+							i.fas.fa-check-square.article-list__item-marker
+							span.article-list__item-text Дополнительный рекламный канал, который повысит узнаваемость вашей компании/бренда
+						li.article-list__item
+							i.fas.fa-check-square.article-list__item-marker
+							span.article-list__item-text Продукт, сделанный только из первичного и наиболее надежного сырья, но при этом стоящий дешево
+						li.article-list__item
+							i.fas.fa-check-square.article-list__item-marker
+							span.article-list__item-text Надежность и стойкость печати. Мы используем методы печати логотипа, наиболее подходящие для каждого вида продукции
+					.row
+						.col-12.col-lg-8.order-2.order-lg-1
+							p.article-paragraph Основное направление нашей компании – производство пакетов с логотипом на заказ. Мы помогли большому количеству предпринимателей вывести их бизнес на новый уровень. Благодаря нашей качественно произведенной продукции люди получили пакет, представляющий их компанию, повышающий лояльность и формирующий имидж
+							p.article-paragraph Мы работаем на рынке business’to’business уже больше 10 лет и точно знаем, что нужно нашему клиенту. B2BPAK занимается производством первоклассной и дешевой продукции в Москве и Подмосковье. 
+							p.article-paragraph Если вы хотите получить дешевый и надежный рекламный канал, то пакет с логотипом – лучший вариант. Вы можете приобрести:
+						.col-12.col-lg-4.order-1.order-lg-2
+							img.article-image(data-src='img/about-image-packages.png', alt="Пакеты с логотипом на заказ из различных материалов. Производство пакет с рисунком в Москве и Московской области")
+					ul.article-list
+						li.article-list__item
+							i.fas.fa-check-square.article-list__item-marker
+							span.article-list__item-text Пакет майка
+						li.article-list__item
+							i.fas.fa-check-square.article-list__item-marker
+							span.article-list__item-text Пакет с вырубной ручкой
+						li.article-list__item
+							i.fas.fa-check-square.article-list__item-marker
+							span.article-list__item-text Бумажный пакет/крафтовый пакет
+						li.article-list__item
+							i.fas.fa-check-square.article-list__item-marker
+							span.article-list__item-text Пакет из полиэтилена высокого давления (ПВД пакет)
+		section.hww
+			.container
+				.hww__heading
+					p.hww__heading-subtitle Как мы работаем
+					h2.hww__heading-title Механизм взаимодействия с клиентами
+						span.hww__heading-title_accent ....
+				.row
+					.col-12.col-md-6.col-xl-3
+						.hww__item
+							.hww__item-inner
+								i.hww__item-icon.fal.fa-headset
+								h3.hww__item-title Получение заявки
+							.hww__item-count 1
+					.col-12.col-md-6.col-xl-3
+						.hww__item
+							.hww__item-inner
+								i.hww__item-icon.fal.fa-ruler-triangle
+								h3.hww__item-title Согласование заказа и макета
+							.hww__item-count 2
+					.col-12.col-md-6.col-xl-3
+						.hww__item
+							.hww__item-inner
+								i.hww__item-icon.fal.fa-truck-loading
+								h3.hww__item-title Доставка
+							.hww__item-count 3
+					.col-12.col-md-6.col-xl-3
+						.hww__item
+							.hww__item-inner
+								i.hww__item-icon.fal.fa-money-bill-alt
+								h3.hww__item-title Оплата
+							.hww__item-count 4
+		section.portfolio
+			.container
+				.portfolio__heading
+					p.portfolio__heading-subtitle Портфолио
+					h2.portfolio__heading-title Примеры наших работ
+						span.portfolio__heading-title_accent ....
+				.row
+					.col-6.col-md-3.portfolio__image-container
+						img.portfolio__image(data-src='../img/portfolio-image-1.png')
+					.col-6.col-md-3.portfolio__image-container
+						img.portfolio__image(data-src='../img/portfolio-image-2.png')
+					.col-6.col-md-3.portfolio__image-container
+						img.portfolio__image(data-src='../img/portfolio-image-3.png')
+					.col-6.col-md-3.portfolio__image-container
+						img.portfolio__image(data-src='../img/portfolio-image-4.png')
+	include ../includes/call-to-action
+
+	include ../includes/footer
+
+	//- include ../includes/modal

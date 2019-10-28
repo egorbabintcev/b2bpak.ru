@@ -1,0 +1,73 @@
+.modal
+	@extend %flex
+	flex-direction: column
+	align-items: center
+	padding: 75px 100px
+	background-color: $light
+	border: 1px solid $dark
+
+	+media-breakpoint-down(sm)
+		width: 90%
+	+media-breakpoint-down(xs)
+		padding: 50px 25px
+
+	&__title
+		margin-bottom: 60px
+		text-align: center
+		text-transform: uppercase
+		font:
+			size: 2.6rem
+			weight: 700
+
+	&-form
+		@extend %flex
+		flex-direction: column
+		align-items: center
+		width: 100%		
+
+		&__input
+			padding: 10px 15px
+			margin-bottom: 30px
+			align-self: stretch
+
+			font:
+				family: $mainFont
+				size: 2rem
+				weight: 400
+
+			border:
+				bottom: 1px solid $gray
+
+			&:last-child
+				margin-bottom: 50px
+
+		&__button
+			padding: 10px 25px
+			background-color: $accent
+			color: $light
+			text-transform: uppercase
+			font:
+				size: 1.8rem
+				weight: 700
+
+	&-wrapper
+		@extend %flex
+		align-items: center
+		justify-content: center
+		width: 100%
+		height: 100%
+		position: fixed
+		top: 0
+		left: 0
+
+		z-index: -1
+		opacity: 0
+		transition: opacity 1s
+		visibility: hidden
+
+		background-color: rgba($light, 0.5)
+
+		&_visible
+			z-index: 2
+			opacity: 1
+			visibility: visible

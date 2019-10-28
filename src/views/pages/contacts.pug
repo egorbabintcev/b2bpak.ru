@@ -1,0 +1,15 @@
+extends ../layouts/base
+block head 
+	-
+		var title = "Связаться для оформления заказа";
+		var description = "Доступны различный виды связи, whatsapp, viber, почта или старый добрый звонок на мобильный.";
+
+block content
+	include ../includes/header
+
+	include ../includes/nav
+
+	main.main
+		include ../includes/call-to-action
+
+	include ../includes/footer

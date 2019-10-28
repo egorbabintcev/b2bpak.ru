@@ -1,0 +1,53 @@
+extends ../layouts/base
+block head 
+	-
+		var title = "Доставка пакетов с логотипом по Москве и Московской области";
+		var description = "Доставка транспортной компанией или курьером быстро и оперативно. Вам не придется долго ждать свой заказ, он прибудет в ближайшее время.";
+
+block content
+	include ../includes/header
+
+	include ../includes/nav
+
+	main.main
+			article.article
+				.container
+					.article__heading
+						p.article__heading-subtitle Доставка
+						h1.article__heading-title Вы можете получить свой заказ
+							span.article__heading-title_accent ....
+					.article-paragraph Наша компания специализируется на производстве пакетов с логотипом. Отлаженный механизм производства, выгодная ценовая политика и огромный опыт дают B2BPAK возможность изготовить любое изделие быстро, дешево и качественно. Доставка нашего продукта осуществляется несколькими способами:
+					h2.article-title По Москве и Московской области:
+					ul.article-list
+						li.article-list__item
+							i.fas.fa-circle.article-list__item-marker.article-list__item-marker_small
+							h4.article-list__item-text.article-list__item-text_normal В пределах МКАД: 550 руб.
+						li.article-list__item
+							i.fas.fa-circle.article-list__item-marker.article-list__item-marker_small
+							h4.article-list__item-text.article-list__item-text_normal До 10 км от Москвы: 650 руб.
+						li.article-list__item
+							i.fas.fa-circle.article-list__item-marker.article-list__item-marker_small
+							h4.article-list__item-text.article-list__item-text_normal До 35 км от Москвы: 700 руб.
+						li.article-list__item
+							i.fas.fa-circle.article-list__item-marker.article-list__item-marker_small
+							h4.article-list__item-text.article-list__item-text_normal До 60 км от Москвы: 950 руб.
+						li.article-list__item
+							i.fas.fa-circle.article-list__item-marker.article-list__item-marker_small
+							h4.article-list__item-text.article-list__item-text_normal До 80 км от Москвы: 1200 руб.
+					h2.article-title В другие регионы России 
+						span.article-title_sub  (при помощи транспортной компании):
+					ul.article-list
+						li.article-list__item.article-list__item_wrap
+							i.fas.fa-circle.article-list__item-marker.article-list__item-marker_small
+							h4.article-list__item-text.article-list__item-text_normal ПЭК
+							p.article-list__item-description Одна из лучших транспортных компаний России, которая занимается организацией грузоперевозок по территории РФ. Она была создана в 2001 году и за годы существования приобрела большую популярность на рынке транспортно-экспедиционных услуг за счет грамотно разработанных логистических схем и профессионализма персонала.
+						li.article-list__item.article-list__item_wrap
+							i.fas.fa-circle.article-list__item-marker.article-list__item-marker_small
+							h4.article-list__item-text.article-list__item-text_normal Деловые линии
+							p.article-list__item-description Группа компаний «Деловые Линии» ведет свою историю с 2001 года. К настоящему моменту нами создана уникальная инфраструктура, позволяющая осуществлять грузовые перевозки сборным грузом, либо индивидуальным, выделенным под заказ клиента, транспортом. Специалисты круглосуточного Контакт-центра помогут вам заказать грузоперевозки из Москвы в любую точку России или за границу – в Беларусь, Казахстан, Киргизию, Армению.
+			.container
+				include ../includes/features
+
+			include ../includes/call-to-action
+
+	include ../includes/footer

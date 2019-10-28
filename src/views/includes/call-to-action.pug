@@ -1,0 +1,37 @@
+section.contacts
+	.container-fluid
+		.container
+			.contacts__heading
+				p.contacts__heading-subtitle свяжитесь с нами
+				h3.contacts__heading-title просто оставьте ваши контакты
+					span.contacts__heading-title_accent ....
+			.row.contacts__items
+				.col-12.col-xl-6.contacts__item
+					span.contacts__item-icon.fa-stack
+						i.fal.fa-circle.fa-stack-2x
+						i.fas.fa-phone.fa-stack-1x
+					span.contacts__item-text +7 (495) 347 12 37
+				.col-12.col-xl-6.contacts__item
+					span.contacts__item-icon.fa-stack
+						i.fal.fa-circle.fa-stack-2x
+						i.fas.fa-envelope.fa-stack-1x
+					span.contacts__item-text zakaz@b2bpak.ru
+				.col-12.col-xl-6.contacts__item
+					span.contacts__item-icon.fa-stack
+						i.fal.fa-circle.fa-stack-2x
+						i.fas.fa-map-marker-alt.fa-stack-1x
+					span.contacts__item-text г. Одинцово, ул. Ново-Спортивная, д.26
+				.col-12.col-xl-6.contacts__item
+					span.contacts__item-icon.fa-stack
+						i.fal.fa-circle.fa-stack-2x
+						i.fas.fa-watch.fa-stack-1x
+					span.contacts__item-text Пн-Пт 9:00-18:00, Сб 9:00-15:00, Вс - выходной
+		.contacts__callout(data-bg='img/contacts-map.jpg')
+			.container
+				.row
+					.col-12.col-md-6.col-xl-4.offset-md-5.offset-xl-7
+						form.form.contacts__form
+							h4.contacts__form-title Заказать консультацию
+							input.contacts__form-input(placeholder='Ваше имя', name="name")
+							input.contacts__form-input(placeholder='Ваш телефон', name="phone")
+							button.contacts__form-button отправить
